@@ -1,0 +1,25 @@
+package at.stegr.uncrafting.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+
+public class BlockUncrafter extends Block {
+	
+	@SideOnly(Side.CLIENT)
+	private IIcon top;
+	
+	protected BlockUncrafter() {
+		super(Material.wood);
+	}
+	
+	@SideOnly(Side.CLIENT)
+	@Override
+	public void registerBlockIcons(IIconRegister iconregister) {
+		this.blockIcon = iconregister.registerIcon("blockIron");
+	}
+
+}

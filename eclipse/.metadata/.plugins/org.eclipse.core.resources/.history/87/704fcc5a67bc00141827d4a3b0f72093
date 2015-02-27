@@ -1,0 +1,27 @@
+package at.stegr.uncrafting.block;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class UCBlocks {
+	
+	public static void load() {
+		initBlocks();
+		registerBlocks();
+	}
+	
+	public static Block BlockUncrafter;
+	
+	public static void initBlocks() {
+		BlockUncrafter = new BlockUncrafter().setBlockName("TutBlock").setCreativeTab(CreativeTabs.tabRedstone);
+		
+		Blocks.command_block.setCreativeTab(CreativeTabs.tabRedstone);
+	}
+	
+	public static void registerBlocks() {
+		GameRegistry.registerBlock(BlockUncrafter, "Uncrafter");
+	}
+
+}

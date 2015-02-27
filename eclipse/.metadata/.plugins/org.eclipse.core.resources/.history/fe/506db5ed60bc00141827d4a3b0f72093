@@ -1,0 +1,13 @@
+package at.stegr.uncrafting.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockUncrafter extends Block {
+
+	protected BlockUncrafter() {
+		super(Material.wood);
+		
+	}
+
+}

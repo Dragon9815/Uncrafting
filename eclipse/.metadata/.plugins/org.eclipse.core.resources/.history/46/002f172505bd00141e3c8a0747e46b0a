@@ -1,0 +1,8 @@
+package at.stegr.uncrafting.tile_entity;
+
+public class TileEntityUncrafter {
+
+	public TileEntityUncrafter() {
+	}
+
+}

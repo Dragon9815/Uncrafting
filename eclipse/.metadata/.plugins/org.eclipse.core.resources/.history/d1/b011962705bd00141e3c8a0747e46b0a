@@ -1,0 +1,12 @@
+package at.stegr.uncrafting.tile_entity;
+
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityUncrafter extends TileEntity {
+
+	public TileEntityUncrafter() {
+		
+	}
+	
+
+}

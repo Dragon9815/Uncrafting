@@ -1,0 +1,16 @@
+package at.stegr.uncrafting.block;
+
+import cpw.mods.fml.relauncher.Side;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockUncrafter extends Block {
+	
+	@SideOnly(Side.CLIENT)
+	private IIcon top;
+	
+	protected BlockUncrafter() {
+		super(Material.wood);
+	}
+
+}

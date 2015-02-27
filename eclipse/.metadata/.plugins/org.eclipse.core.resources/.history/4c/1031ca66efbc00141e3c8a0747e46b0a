@@ -1,0 +1,17 @@
+package at.stegr.uncrafting.item;
+
+public class UCItem {
+
+	public void mainRegistry() {
+		
+	}
+	
+	public void initializeItems() {
+		
+	}
+	
+	public void registerItems() {
+		
+	}
+
+}

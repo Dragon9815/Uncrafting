@@ -1,0 +1,11 @@
+package at.stegr.uncrafting.inventory;
+
+import net.minecraft.inventory.Slot;
+
+public class UncrafterSlot extends Slot{
+
+	public UncrafterSlot() {
+		super();
+	}
+
+}

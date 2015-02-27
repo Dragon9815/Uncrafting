@@ -1,0 +1,74 @@
+package at.stegr.uncrafting.tile_entity;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.IInventory;
+import net.minecraft.inventory.ISidedInventory;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+
+public class TileEntityUncrafter extends TileEntity implements IInventory {
+	
+	private ItemStack[] UncrafterItemStacks = new ItemStack[10];
+	
+	public TileEntityUncrafter() {
+		super();
+	}
+
+	public int getSizeInventory() {
+		return this.UncrafterItemStacks.length;
+	}
+
+	public ItemStack getStackInSlot(int slot) {
+		return this.UncrafterItemStacks[slot];
+	}
+
+	public ItemStack decrStackSize(int par1, int par2) {
+		if(this.UncrafterItemStacks[par1] != null) {
+			ItemStack itemstack;
+			if(this.UncrafterItemStacks[par1].stackSize <= par2) {
+				itemstack = this.UncrafterItemStacks[par1];
+				this.UncrafterItemStacks[par1] = null;
+				return itemstack;
+			}
+		}
+	}
+
+	public ItemStack getStackInSlotOnClosing(int p_70304_1_) {
+		return null;
+	}
+
+	public void setInventorySlotContents(int p_70299_1_, ItemStack p_70299_2_) {
+	}
+
+	public String getInventoryName() {
+		return null;
+	}
+
+	public boolean hasCustomInventoryName() {
+		return false;
+	}
+
+	public int getInventoryStackLimit() {
+		return 0;
+	}
+
+	public boolean isUseableByPlayer(EntityPlayer p_70300_1_) {
+		return false;
+	}
+
+	public void openInventory() {
+	}
+
+	public void closeInventory() {
+	}
+
+	public boolean isItemValidForSlot(int p_94041_1_, ItemStack p_94041_2_) {
+		return false;
+	}
+
+	public int[] getAccessibleSlotsFromSide(int p_94128_1_) {
+		return null;
+	}
+	
+
+}

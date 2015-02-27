@@ -1,0 +1,7 @@
+package at.stegr.uncrafting.block;
+
+import net.minecraft.block.Block;
+
+public class BlockUncrafter extends Block {
+
+}

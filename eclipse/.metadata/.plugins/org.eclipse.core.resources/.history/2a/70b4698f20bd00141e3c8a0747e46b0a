@@ -1,0 +1,35 @@
+package at.stegr.uncrafting.gui;
+
+import at.stegr.uncrafting.inventory.ContainerUncrafter;
+import at.stegr.uncrafting.tile_entity.TileEntityUncrafter;
+import cpw.mods.fml.relauncher.Side;
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.ResourceLocation;
+
+@SideOnly(Side.CLIENT)
+public class GuiUncrafter extends GuiContainer {
+	
+	private static final ResourceLocation UncrafterGuiTextures = new ResourceLocation("textures/gui/DCGui.png");
+	private TileEntityUncrafter tileUncrafter;
+
+	public GuiUncrafter(EntityPlayer player, TileEntityUncrafter tile) {
+		super(new ContainerUncrafter(player, tile));
+		this.tileUncrafter = tile;
+	}
+	
+	@Override
+	protected void drawGuiContainerForegroundLayer(int par1, int par2) {
+		String string = this.tileUncrafter.hasCustomInventoryName() ? this.tileUncrafter.getInventoryName() : I18n.format(this.tileUncrafter.getInventoryName(), new Object[0]);
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) {
+		
+	}
+
+}

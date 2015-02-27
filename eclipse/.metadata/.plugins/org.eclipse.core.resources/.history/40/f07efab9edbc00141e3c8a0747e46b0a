@@ -1,0 +1,18 @@
+package at.stegr.uncrafting.main;
+
+public class CraftingManager {
+
+	public static void mainRegistry() {
+		addCraftingRecipes();
+		addSmeltingRecipes()
+	}
+	
+	public static void addCraftingRecipes() {
+		
+	}
+	
+	public static void addSmeltingRecipes() {
+		
+	}
+
+}

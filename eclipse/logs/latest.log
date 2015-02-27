@@ -1,0 +1,27 @@
+[21:57:50] [main/INFO]: Setting user: Player687
+[21:57:51] [Client thread/INFO]: LWJGL Version: 2.9.1
+[21:57:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Uncrafting
+[21:57:54] [Sound Library Loader/INFO]: Sound engine started
+[21:57:54] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:57:54] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:57:54] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Uncrafting
+[21:57:54] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[21:57:54] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[21:57:55] [Sound Library Loader/INFO]: Sound engine started
+[21:57:57] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[21:57:57] [Server thread/INFO]: Generating keypair
+[21:57:57] [Server thread/INFO]: Preparing start region for level 0
+[21:57:58] [Server thread/INFO]: Changing view distance to 12, from 10
+[21:57:58] [Server thread/INFO]: Player687[local:E:489ab23f] logged in with entity id 378 at (129.54751829055385, 72.0, 239.2662942318611)
+[21:57:58] [Server thread/INFO]: Player687 joined the game
+[21:58:18] [Server thread/INFO]: Saving and pausing game...
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[21:58:18] [Server thread/INFO]: Stopping server
+[21:58:18] [Server thread/INFO]: Saving players
+[21:58:18] [Server thread/INFO]: Saving worlds
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/Overworld
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/Nether
+[21:58:18] [Server thread/INFO]: Saving chunks for level 'Test'/The End
+[21:58:19] [Client thread/INFO]: Stopping!

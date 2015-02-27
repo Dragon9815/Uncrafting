@@ -1,0 +1,33 @@
+package at.stegr.uncrafting.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockWorkbench;
+import net.minecraft.block.material.Material;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.world.World;
+
+public class BlockCraftingTable extends BlockWorkbench {
+
+	public BlockCraftingTable(Material p_i45394_1_) {
+		super();
+	}
+
+	@Override
+	public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float px, float py, float pz)
+    {
+        if (world.isRemote)
+        {
+            return true;
+        }
+        else
+        {
+        	if(player.isSneaking())
+        	{
+        		
+        	}
+        	
+            player.displayGUIWorkbench(x, y, z);
+            return true;
+        }
+    }
+}

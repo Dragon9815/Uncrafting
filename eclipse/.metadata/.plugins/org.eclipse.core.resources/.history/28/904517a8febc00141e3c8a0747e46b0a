@@ -1,0 +1,8 @@
+package at.stegr.uncrafting.gui;
+
+public class GuiDeconstructionTable {
+
+	public GuiDeconstructionTable() {
+	}
+
+}

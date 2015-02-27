@@ -1,0 +1,9 @@
+package at.stegr.uncrafting.main;
+
+public class CommonProxy {
+	
+	public void registerRenderers()
+	{
+		// Nothing to Render on a Server
+	}
+}

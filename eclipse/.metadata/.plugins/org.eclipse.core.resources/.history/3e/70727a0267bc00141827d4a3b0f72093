@@ -1,0 +1,23 @@
+package at.stegr.uncrafting.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class UCBlocks {
+	
+	public static void load() {
+		initBlocks();
+		registerBlocks();
+	}
+	
+	public static Block BlockUncrafter;
+	
+	public static void initBlocks() {
+		BlockUncrafter = new BlockUncrafter().setBlockName("TutBlock").setCreativeTab(CreativeTabs.tabRedstone);
+	}
+	
+	public static void registerBlocks() {
+		
+	}
+
+}

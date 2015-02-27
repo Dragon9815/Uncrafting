@@ -1,0 +1,33 @@
+package at.stegr.uncrafting.inventory;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.Slot;
+import at.stegr.uncrafting.tile_entity.TileEntityUncrafter;
+
+public class ContainerUncrafter extends Container {
+	
+	private TileEntityUncrafter tileUncrafter;
+	
+	public ContainerUncrafter(EntityPlayer player, TileEntityUncrafter tileentity) {
+		this.tileUncrafter = tileentity;
+		
+		this.addSlotToContainer(new Slot(tileentity, 0,  39, 31));
+		
+		this.addSlotToContainer(new Slot(tileentity, 1,  97, 17));
+		this.addSlotToContainer(new Slot(tileentity, 2, 115, 17));
+		this.addSlotToContainer(new Slot(tileentity, 3,  38, 17));
+		this.addSlotToContainer(new Slot(tileentity, 4,  38, 30));
+		this.addSlotToContainer(new Slot(tileentity, 5,  38, 30));
+		this.addSlotToContainer(new Slot(tileentity, 6,  38, 30));
+		this.addSlotToContainer(new Slot(tileentity, 7,  38, 30));
+		this.addSlotToContainer(new Slot(tileentity, 8,  38, 30));
+		this.addSlotToContainer(new Slot(tileentity, 9,  38, 30));
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer p_75145_1_) {
+		return false;
+	}
+
+}

@@ -1,0 +1,19 @@
+package at.stegr.uncrafting.gui;
+
+import net.minecraft.client.gui.inventory.GuiContainer;
+import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.tileentity.TileEntity;
+
+public class GuiUncrafter extends GuiContainer {
+
+
+	public GuiUncrafter(InventoryPlayer invPlayer, TileEntity tile) {
+		super(p_i1072_1_);
+	}
+
+	@Override
+	protected void drawGuiContainerBackgroundLayer(float var1, int var2, int var3) {
+	}
+
+}

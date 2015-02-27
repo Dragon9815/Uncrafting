@@ -1,0 +1,8 @@
+package at.stegr.uncrafting.inventory;
+
+public class UncrafterSlot {
+
+	public UncrafterSlot() {
+	}
+
+}
