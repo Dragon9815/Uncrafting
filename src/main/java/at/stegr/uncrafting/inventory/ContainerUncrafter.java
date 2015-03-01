@@ -1,19 +1,24 @@
 package at.stegr.uncrafting.inventory;
 
-import net.minecraft.client.gui.inventory.GuiCrafting;
-import net.minecraft.client.gui.inventory.GuiFurnace;
+import sun.org.mozilla.javascript.internal.ast.Block;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.inventory.Container;
+import net.minecraft.inventory.ICrafting;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.Slot;
-import net.minecraft.inventory.SlotMerchantResult;
+import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.item.crafting.FurnaceRecipes;
+import net.minecraft.item.crafting.RecipesIngots;
 import at.stegr.uncrafting.tile_entity.TileEntityUncrafter;
 
 public class ContainerUncrafter extends Container {
 	
 	private TileEntityUncrafter tileUncrafter;
+	private IInventory craftSlot;
+	private IInventory resultMatrix;
 	
 	public ContainerUncrafter(EntityPlayer player, TileEntityUncrafter tile) {
 		this.tileUncrafter = tile;
@@ -97,7 +102,24 @@ public class ContainerUncrafter extends Container {
 		
 		return itemstack;
 		
-		this.
+		
+		
+	}
+	
+	@Override
+	public void detectAndSendChanges() {
+		
+		ItemStack itemstack = this.tileUncrafter.getStackInSlot(0);
+		
+		if(itemstack != null) {
+			Item item = itemstack.getItem();
+			
+			if(item.getUnlocalizedName().equals("item.stick")) {
+				this.tileUncrafter.setInventorySlotContents(1, new ItemStack(Blocks.anvil, 1));
+				((Slot)this.inventorySlots.get(1)).onSlotChanged();
+				this.tileUncrafter.setInventorySlotContents(2, new ItemStack(Blocks.diamond_block, 5));
+			}
+		}
 	}
 
 }

@@ -5,36 +5,16 @@
  R4wk, ZeuX, IngisKahn, bspkrs
  MCP Data version : unknown
 ****************************
-:extractMcpData
-:getVersionJson
-:extractUserDev
-:genSrgs SKIPPED
-:extractNatives
-:copyNativesLegacy
-:getAssetsIndex
-:getAssets
-:makeStart
- Corrupted Cache!
-:downloadMcpTools SKIPPED
-:downloadClient SKIPPED
-:downloadServer SKIPPED
-:mergeJars SKIPPED
-:deobfuscateJar SKIPPED
-:decompile SKIPPED
-:processSources
-Injecting fml files
-Applying fml patches
-Applying forge patches
-:remapJar SKIPPED
-:extractMinecraftSrc SKIPPED
-:recompMinecraft SKIPPED
-:repackMinecraft SKIPPED
-:setupDecompWorkspace
-:eclipseClasspath
-:eclipseJdt
-:eclipseProject
-:eclipse
+:help
+
+Welcome to Gradle 2.0.
+
+To run a build, run gradlew <task> ...
+
+To see a list of available tasks, run gradlew tasks
+
+To see a list of command-line options, run gradlew --help
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 49.32 secs
+Total time: 1 mins 1.211 secs
