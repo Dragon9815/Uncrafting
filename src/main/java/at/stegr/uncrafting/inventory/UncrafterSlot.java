@@ -15,5 +15,20 @@ public class UncrafterSlot extends Slot{
 	public boolean isItemValid(ItemStack p_75214_1_) {
 		return false;
 	}
+	
+	@Override
+	public void onCrafting(ItemStack par1, int par2) {
+		this.onCrafting(par1);
+	}
+	
+	@Override
+	public void onCrafting(ItemStack itemstack) {
+		System.out.println("onCrafting");
+	}
+	
+	@Override
+	public void onSlotChange(ItemStack par1, ItemStack par2) {
+		System.out.println("onSlotChange");
+	}
 
 }
