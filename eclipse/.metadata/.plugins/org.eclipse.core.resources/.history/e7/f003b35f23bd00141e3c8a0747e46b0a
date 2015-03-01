@@ -1,0 +1,57 @@
+package at.stegr.uncrafting.inventory;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.inventory.Container;
+import net.minecraft.inventory.Slot;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
+import at.stegr.uncrafting.tile_entity.TileEntityUncrafter;
+
+public class ContainerUncrafter extends Container {
+	
+	private TileEntityUncrafter tileUncrafter;
+	
+	public ContainerUncrafter(EntityPlayer player, TileEntityUncrafter tile) {
+		this.tileUncrafter = tile;
+		
+		this.addSlotToContainer(new Slot(tile, 0,  39, 31));
+		
+		this.addSlotToContainer(new Slot(tile, 1,  97, 17));
+		this.addSlotToContainer(new Slot(tile, 2, 115, 17));
+		this.addSlotToContainer(new Slot(tile, 3, 133, 17));
+		this.addSlotToContainer(new Slot(tile, 4,  97, 35));
+		this.addSlotToContainer(new Slot(tile, 5, 115, 35));
+		this.addSlotToContainer(new Slot(tile, 6, 133, 35));
+		this.addSlotToContainer(new Slot(tile, 7,  97, 53));
+		this.addSlotToContainer(new Slot(tile, 8, 115, 53));
+		this.addSlotToContainer(new Slot(tile, 9, 133, 53));
+	}
+
+	@Override
+	public boolean canInteractWith(EntityPlayer player) {
+		return this.tileUncrafter.isUseableByPlayer(player);
+	}
+	
+	public ItemStack transferStackInSlot(EntityPlayer player, int par2) {
+		ItemStack itemstack = null;
+		
+		Slot slot = (Slot)this.inventorySlots.get(par2);
+		
+		if(slot != null && slot.getStack() != null) {
+			ItemStack itemstack1 = slot.getStack();
+			itemstack = itemstack1.copy();
+			
+			if(par2 == 0) {
+				if(!this.mergeItemStack(itemstack1, 3, 39, true)) {
+					return null;
+				}
+				slot.onSlotChange(itemstack1, itemstack);
+			} else {
+				return null;
+			}
+		}
+		
+		return null;
+	}
+
+}

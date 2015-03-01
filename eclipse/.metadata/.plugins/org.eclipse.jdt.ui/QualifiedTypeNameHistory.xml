@@ -16,6 +16,7 @@
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="net.minecraft.util.RegistryNamespaced"/>
 <fullyQualifiedTypeName name="at.stegr.uncrafting.item.ItemUncraftingUpgrade"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
 <fullyQualifiedTypeName name="at.stegr.uncrafting.block.UCBlocks"/>
 <fullyQualifiedTypeName name="net.minecraft.client.gui.inventory.GuiContainer"/>
 <fullyQualifiedTypeName name="net.minecraft.tileentity.TileEntity"/>
@@ -48,9 +49,4 @@
 <fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
 <fullyQualifiedTypeName name="at.stegr.uncrafting.inventory.ContainerUncrafter"/>
 <fullyQualifiedTypeName name="net.minecraft.item.Item"/>
-<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
-<fullyQualifiedTypeName name="net.minecraft.item.crafting.RecipesIngots"/>
-<fullyQualifiedTypeName name="net.minecraft.item.crafting.FurnaceRecipes"/>
-<fullyQualifiedTypeName name="net.minecraft.inventory.SlotFurnace"/>
-<fullyQualifiedTypeName name="sun.org.mozilla.javascript.internal.ast.Block"/>
 </qualifiedTypeNameHistroy>
